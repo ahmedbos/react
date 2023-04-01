@@ -11,12 +11,12 @@ const handleChange = (event) => {
   const value = event.target.value;
   setInputs(values => ({...values, [name]: value}))
 }
-var iw=0;
+var iw=5;
 switch (inputs.gender) {case 'male' :
-                                       iw=50+(0.91*parseInt(inputs.heigth)-152.4);
+                                       iw+=50+(0.91*parseInt(inputs.heigth)-152.4);
                                        break;
                         case 'female' :
-                                       iw=45.5+(0.91*parseInt(inputs.heigth)-152.4);
+                                       iw+=45.5+(0.91*parseInt(inputs.heigth)-152.4);
                                         break;  };
 iw=Math.floor(iw);
 var msgs="";
